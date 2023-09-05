@@ -1,0 +1,47 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+img {
+  width: 100vw;
+  height: auto;
+}
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel .carousel-inner {
+  display: flex;
+  transition: translate 0.4s ease;
+}
+
+.carousel .carousel-nav span {
+  position: absolute;
+  top: 50%;
+  translate: 0 -50%;
+  width: 40px;
+  height: 40px;
+  display: block;
+  background-color: gray;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.carousel .carousel-nav span.prev {
+  left: 5px;
+}
+
+.carousel .carousel-nav span.next {
+  right: 5px;
+}
