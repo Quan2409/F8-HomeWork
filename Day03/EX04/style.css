@@ -1,0 +1,75 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+/* Nav */
+section {
+  margin: 30px;
+}
+
+section nav {
+  margin-bottom: 40px;
+}
+
+nav ul {
+  font-size: 0px;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  padding: 10px 40px;
+  font-size: 1rem;
+  border: 1px solid brown;
+}
+
+nav ul li:nth-child(1) {
+  border-right: none;
+}
+
+nav ul li:nth-child(2),
+li:nth-child(3) {
+  border-left: none;
+  border-right: none;
+}
+
+nav ul li:nth-child(4) {
+  border-left: none;
+}
+
+nav ul li:hover {
+  background-color: brown;
+  color: #fff;
+}
+
+.main {
+  width: 1500px;
+  background-color: rgb(226, 222, 222);
+}
+
+div .map-content {
+  width: 460px;
+  margin: 80px 20px;
+  float: left;
+}
+
+.map-content .location {
+  margin: 20px 0;
+}
+
+.map-content .location span {
+  display: block;
+}
+
+.map-content .contact span {
+  display: block;
+}
+
+iframe {
+  display: inline-block;
+  width: 1000px;
+}

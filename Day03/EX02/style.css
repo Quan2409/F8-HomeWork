@@ -1,0 +1,64 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap");
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+
+.feedback {
+}
+
+.feedback .header {
+  width: 400px;
+  height: 100px;
+  margin: 30px auto;
+}
+
+.feedback .header .heading {
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.feedback .header .line {
+  width: 60px;
+  padding: 2px;
+  margin: 0 auto;
+  border: none;
+  background-color: rgb(95, 147, 253);
+}
+
+.feedback-list {
+  width: 1500px;
+  margin: 0 auto;
+}
+
+.feedback-list .client {
+  padding-bottom: 30px;
+  padding-right: 40px;
+  display: inline-block;
+}
+
+.feedback-list .content {
+  display: inline-block;
+  width: 350px;
+}
+
+.feedback-list .content .review {
+  font-style: italic;
+}
+
+.feedback-list .content span {
+  margin-top: 10px;
+  display: block;
+  font-weight: bold;
+}

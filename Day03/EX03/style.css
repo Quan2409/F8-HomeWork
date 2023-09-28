@@ -1,0 +1,70 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+section {
+  width: 350px;
+}
+
+form label {
+  display: inline-block;
+  width: 50px;
+}
+
+form input,
+select {
+  margin-bottom: 5px;
+  margin-left: 50px;
+  border: 1px solid rgb(34, 167, 219);
+}
+
+.role {
+  margin-top: 10px;
+}
+
+.role span {
+  display: inline-block;
+  width: 100px;
+  margin-top: 20px;
+}
+
+.role ul {
+  margin-left: 30px;
+  display: inline-block;
+}
+
+.role ul li {
+  list-style: circle;
+}
+
+.sign-in {
+  margin-top: 10px;
+}
+
+.sign-in span {
+  display: inline-block;
+  width: 100px;
+  margin-top: 20px;
+}
+
+.sign-in ul {
+  margin-left: 30px;
+  display: inline-block;
+}
+
+.sign-in ul li {
+  list-style: square;
+}
+
+.btn-action {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.btn-action button {
+  border: 1px solid rgb(34, 167, 219);
+}
