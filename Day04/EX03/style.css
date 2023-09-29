@@ -1,0 +1,92 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+section {
+  text-align: center;
+  margin-top: 50px;
+}
+
+section h1 {
+  font-size: 3rem;
+}
+
+nav ul li {
+  margin-top: 20px;
+  padding: 15px 30px;
+  display: inline-block;
+  background-color: rgb(245, 245, 245);
+}
+
+nav ul li:hover {
+  color: #fff;
+  background-color: rgb(41, 56, 142);
+}
+
+.product-list {
+  display: flex;
+  justify-content: center;
+  column-gap: 30px;
+  margin-top: 50px;
+}
+
+.product {
+  position: relative;
+}
+
+.product > img:nth-child(2) {
+  position: absolute;
+  left: 0px;
+  top: -1px;
+  display: none;
+}
+
+.product img:hover ~ img:nth-child(2) {
+  display: block;
+}
+
+.product img:hover ~ .button-action {
+  visibility: visible;
+}
+
+.product .button-action {
+  width: 200px;
+  margin: 0 auto;
+  position: relative;
+  top: -100px;
+  visibility: hidden;
+}
+
+.product .button-action button {
+  padding: 15px;
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  background-color: rgb(41, 56, 142);
+}
+
+.product .button-action button:nth-child(4) {
+  display: block;
+  width: 200px;
+  margin: 8px auto;
+}
+
+.product-content {
+  position: relative;
+  bottom: 80px;
+}
+
+.product-content .product-name {
+  margin-top: 15px;
+  display: block;
+}
+
+.product-content .product-price {
+  margin-top: 15px;
+  display: block;
+  font-weight: bold;
+}

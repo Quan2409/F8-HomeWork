@@ -1,0 +1,56 @@
+/* Fonts: Alfa Slab One */
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&display=swap");
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.main {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.main span {
+  display: block;
+  font-size: 2rem;
+  color: rgb(58, 38, 23);
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.main h1 {
+  font-size: 3rem;
+  color: rgb(58, 38, 23);
+  font-family: "Alfa Slab One", cursive;
+}
+
+.reservation-form {
+  width: 500px;
+  margin: 30px auto;
+}
+
+.reservation-form input {
+  width: 250px;
+  padding: 10px;
+  margin: 5px;
+}
+
+.reservation-form input::placeholder {
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: #000;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.reservation-form button {
+  width: 250px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(176, 50, 42);
+  color: #fff;
+  background-color: rgb(176, 50, 42);
+  font-family: "Alfa Slab One", cursive;
+}
