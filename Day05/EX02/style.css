@@ -1,0 +1,66 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.main {
+  width: 100vw;
+  margin: 20px auto;
+}
+
+.item {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.item input {
+  position: absolute;
+  top: 13px;
+  left: 10px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.item .custom-mark {
+  position: absolute;
+  top: 18px;
+  left: 13px;
+  display: block;
+  width: 10px;
+  height: 3px;
+  background-color: #fff;
+}
+
+.item .custom-mark::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 3px;
+  background-color: #fff;
+  transform: rotate(90deg);
+}
+
+.item .title {
+  display: block;
+  width: 100%;
+  padding: 10px 30px;
+  color: #fff;
+  background-color: rgb(217, 89, 37);
+}
+
+.item .content {
+  display: none;
+  padding: 10px 30px;
+  background-color: #fff;
+}
+
+.item input:checked ~ .custom-mark::after {
+  transform: rotate(0deg);
+}
+
+.item input:checked ~ .content {
+  display: block;
+}

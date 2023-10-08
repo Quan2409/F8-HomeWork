@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day05-EX01</title>
+    <!-- Fonts Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section class="main">
+      <h1 class="title">Hey There</h1>
+      <p class="text">
+        <span class="highlight">We'd like to hear form you.</span> Send us your
+        message or just say hy with our contact form or directly via phone, we
+        love to chat.
+      </p>
+      <form>
+        <!-- name -->
+        <label class="name-field">
+          <input type="text" placeholder="Your name" />
+          <i class="fa-solid fa-user icon"></i>
+          <span class="tooltip"
+            >Enter Your Name
+            <i class="fa-solid fa-caret-down"></i>
+          </span>
+        </label>
+        <!-- email -->
+        <label class="email-field">
+          <input type="email" placeholder="your@domain.com" />
+          <i class="fa-solid fa-envelope icon"></i>
+          <span class="tooltip"
+            >Enter Your Email
+            <i class="fa-solid fa-caret-down"></i>
+          </span>
+        </label>
+        <!-- phone -->
+        <label class="phone-field">
+          <input type="phone" placeholder="+44 00 123" />
+          <i class="fa-solid fa-phone icon"></i>
+          <span class="tooltip"
+            >Enter Your Phone
+            <i class="fa-solid fa-caret-down"></i>
+          </span>
+        </label>
+        <label class="subject-field">
+          <input type="text" placeholder="Subject" />
+          <i class="fa-solid fa-book icon"></i>
+          <span class="tooltip"
+            >Enter Your Subject
+            <i class="fa-solid fa-caret-down"></i>
+          </span>
+        </label>
+        <label class="message-field">
+          <input type="text" placeholder="Message" />
+          <i class="fa-solid fa-message icon"></i>
+          <span class="tooltip"
+            >Enter Your Message
+            <i class="fa-solid fa-caret-down"></i>
+          </span>
+        </label>
+      </form>
+      <div class="check-box">
+        <label>
+          <input type="checkbox" />
+          <span class="custom-checkbox"></span>
+          <i class="fa-solid fa-check done"></i>
+        </label>
+        <span class="notice">Send me a copy of this message </span>
+        <button>Send</button>
+      </div>
+    </section>
+  </body>
+</html>

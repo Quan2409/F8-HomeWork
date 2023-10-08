@@ -1,0 +1,60 @@
+/* Fonts: Roboto */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.main {
+  margin-top: 40px;
+  text-align: center;
+}
+
+/* Services */
+.service-list {
+  margin-top: 100px;
+}
+
+.service {
+  display: inline-block;
+  width: 350px;
+  height: 350px;
+  padding: 30px;
+  margin: 0 10px;
+  box-shadow: 0px 0px 5px rgb(197, 196, 196);
+}
+
+.service-img {
+  border-radius: 50%;
+  border: 1px solid rgb(242, 169, 59);
+  padding: 30px;
+  color: rgb(242, 169, 59);
+  font-size: 3rem;
+}
+
+.service-name {
+  font-size: 2rem;
+  padding: 20px 0;
+}
+
+.service-des {
+  font-size: 14px;
+}
+
+.btn-action {
+  display: block;
+  margin: 30px auto;
+  padding: 15px 30px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  background-color: rgb(242, 169, 59);
+}

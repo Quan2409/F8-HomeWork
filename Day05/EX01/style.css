@@ -1,0 +1,171 @@
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Lobster&display=swap");
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.main {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.main .title {
+  font-size: 3rem;
+  font-weight: 400;
+  font-family: "Lobster", cursive;
+}
+
+.main .text {
+  width: 500px;
+  margin-top: 20px;
+  color: rgb(210, 210, 210);
+  font-family: "Lato", sans-serif;
+}
+
+.text .highlight {
+  color: red;
+}
+
+/* form */
+.main form {
+  margin-top: 30px;
+}
+
+form label {
+  display: block;
+}
+
+form .icon {
+  position: absolute;
+  left: 250px;
+  padding: 10px 15px;
+  background-color: rgb(210, 210, 210);
+  color: #fff;
+  font-size: 15px;
+}
+
+form input {
+  margin-bottom: 20px;
+  padding: 10px 50px;
+  width: 500px;
+  border: 1px solid rgb(210, 210, 210);
+}
+
+form .message-field i {
+  height: 175px;
+}
+
+form .message-field input {
+  padding-bottom: 150px;
+}
+
+form .tooltip {
+  display: none;
+  position: absolute;
+  top: 100px;
+  left: 300px;
+  padding: 10px;
+  color: #fff;
+  background-color: rgb(51, 51, 51);
+  font-size: 12px;
+  font-family: "Lato", sans-serif;
+}
+
+form .email-field .tooltip {
+  position: absolute;
+  top: 160px;
+}
+
+form .phone-field .tooltip {
+  position: absolute;
+  top: 215px;
+}
+
+form .subject-field .tooltip {
+  position: absolute;
+  top: 270px;
+}
+
+form .message-field .tooltip {
+  position: absolute;
+  top: 330px;
+}
+
+form .tooltip i {
+  display: block;
+  position: absolute;
+  top: 25px;
+  font-size: 20px;
+  color: rgb(51, 51, 51);
+}
+
+form input:hover {
+  border: 1px solid rgb(51, 51, 51);
+}
+
+form input:hover ~ .icon {
+  background-color: rgb(51, 51, 51);
+}
+
+form input:focus ~ .tooltip {
+  display: block;
+}
+
+/* checkbox and button */
+.check-box {
+  position: relative;
+  margin-top: 10px;
+  color: rgb(200, 200, 200);
+  font-family: "Lato", sans-serif;
+  cursor: pointer;
+}
+
+.check-box input[type="checkbox"] {
+  opacity: 0;
+  position: absolute;
+  cursor: pointer;
+}
+
+.check-box .custom-checkbox {
+  position: absolute;
+  top: -3px;
+  left: 0px;
+  width: 25px;
+  height: 25px;
+  border: 1px solid rgb(210, 210, 210);
+}
+
+.check-box .done {
+  position: absolute;
+  color: black;
+  left: 5px;
+  top: 2px;
+  display: none;
+}
+
+.check-box .notice {
+  display: block;
+  margin: 0 35px;
+}
+
+.check-box input:checked ~ .done {
+  display: block;
+}
+
+.check-box button {
+  display: block;
+  position: relative;
+  top: -25px;
+  margin-left: auto;
+  border: none;
+  padding: 10px 40px;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: rgb(234, 63, 51);
+}
