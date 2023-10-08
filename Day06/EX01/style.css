@@ -1,0 +1,60 @@
+/* Fonts: OpenSans */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap");
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.nav-bar {
+  width: 1000px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+ul {
+  border: 1px solid rgb(245, 245, 245);
+  font-size: 0;
+}
+
+ul li {
+  display: inline-block;
+  padding: 20px 20px;
+  border: 1px solid rgb(245, 245, 245);
+  list-style: none;
+  font-size: 1rem;
+}
+
+ul > li:hover {
+  color: #fff;
+  background-color: rgb(83, 162, 212);
+}
+
+ul li:nth-child(3):hover > .sub-nav {
+  display: block;
+  color: #000;
+}
+
+ul li:nth-child(6) {
+  display: inline-block;
+  margin-left: 316px;
+}
+
+ul li:nth-child(3) > .sub-nav {
+  position: absolute;
+  top: 118px;
+  left: 580px;
+  box-shadow: 0px 0px 5px gray;
+  display: none;
+}
+
+.sub-nav li {
+  display: block;
+  padding-right: 150px;
+}

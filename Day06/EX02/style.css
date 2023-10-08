@@ -1,0 +1,87 @@
+/* Fonts: Roboto */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(230, 238, 245);
+  font-family: "Roboto", sans-serif;
+}
+
+/* service */
+.service-list {
+  max-width: 1200px;
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.service {
+  width: 350px;
+  height: 200px;
+  margin: 10px 15px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.service:hover {
+  border: 2px solid rgb(232, 96, 85);
+}
+
+/* heading */
+.service .heading {
+  display: flex;
+  column-gap: 10px;
+  font-size: 0.9rem;
+  font-weight: lighter;
+  margin-bottom: 15px;
+}
+
+.service .heading .service-img {
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: center;
+  background-color: rgb(228, 93, 120);
+}
+
+.service:nth-of-type(2) .service-img {
+  background-color: rgb(81, 168, 164);
+}
+
+.service:nth-of-type(3) .service-img {
+  background-color: rgb(229, 147, 55);
+}
+
+.service:nth-of-type(4) .service-img {
+  background-color: rgb(87, 130, 229);
+}
+
+.service:nth-of-type(5) .service-img {
+  background-color: rgb(138, 55, 214);
+}
+
+.service:nth-of-type(6) .service-img {
+  background-color: rgb(120, 159, 59);
+}
+
+/* text */
+.service .service-des {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* anchor */
+.service a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
