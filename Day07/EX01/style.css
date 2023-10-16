@@ -1,0 +1,53 @@
+/* Fonts: Asap */
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@200;300;400;500;600;700&display=swap");
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(./assets/img/banner.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% -20%;
+  font-family: "Asap", sans-serif;
+}
+
+.banner {
+  position: relative;
+  top: 100px;
+  left: 250px;
+  margin: 50px 40px;
+  padding: 20px;
+  border-radius: 5px;
+  width: 630px;
+  height: 200px;
+  background-color: rgba(253, 254, 254, 0.8);
+}
+
+.banner .title {
+  font-weight: 600;
+  color: #bf4240;
+}
+
+.banner .description {
+  margin: 10px 0;
+  line-height: 25px;
+}
+
+.banner .btn-price {
+  position: absolute;
+  top: 170px;
+  left: 430px;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  display: block;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: #bf4240;
+}

@@ -1,0 +1,76 @@
+/* Fonts: Asap */
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@200;300;400;500;600;700&display=swap");
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./assets/img/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: 80vw;
+  background-position: 50% 0%;
+  overflow: hidden;
+}
+
+.profile {
+  display: flex;
+  column-gap: 20px;
+  position: relative;
+  top: 270px;
+  left: 200px;
+  font-family: "Asap", sans-serif;
+}
+
+.profile .data {
+  margin-top: 20px;
+  color: rgba(253, 254, 254, 1);
+}
+
+.profile .data h1 {
+  text-transform: uppercase;
+}
+
+.profile .data p {
+  display: inline-block;
+  margin-top: 20px;
+  padding-right: 20px;
+}
+
+.profile .data p span {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.profile nav {
+  position: relative;
+  top: 180px;
+  left: 400px;
+}
+
+.profile nav ul li {
+  margin-right: 20px;
+  display: inline-block;
+  list-style: none;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.profile nav ul li hr {
+  margin-top: 10px;
+  border: none;
+  height: 2px;
+  visibility: hidden;
+  background-color: orangered;
+}
+
+.profile nav ul li:hover {
+  color: orangered;
+}
+
+.profile nav ul li:hover hr {
+  visibility: visible;
+}

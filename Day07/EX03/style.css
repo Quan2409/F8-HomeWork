@@ -1,0 +1,81 @@
+/* Fonts: Asap */
+@import url("https://fonts.googleapis.com/css2?family=Asap:wght@200;300;400;500;600;700&display=swap");
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.discovery {
+  width: 1500px;
+  margin: 50px auto;
+  font-family: "Asap", sans-serif;
+}
+
+.discovery h2 {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.list-area .area {
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 20px;
+  padding: 12px 8px;
+  border-radius: 50px;
+  background-color: rgb(228, 228, 228);
+}
+
+.list-area .area span:nth-child(1) {
+  display: block;
+  margin-bottom: 3px;
+  width: 130px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.list-area .area:hover {
+  color: #fff;
+  background-color: rgb(175, 124, 56);
+}
+
+.list-area .area span:nth-child(2) {
+  display: block;
+  text-align: center;
+  font-style: italic;
+  font-size: 0.8rem;
+}
+
+/* location */
+.list-location {
+  display: flex;
+  column-gap: 20px;
+  flex-wrap: wrap;
+}
+
+.location {
+  position: relative;
+  margin-top: 30px;
+}
+
+.location .content {
+  position: absolute;
+  left: 20px;
+  opacity: 1;
+  color: #fff;
+}
+
+.location .content h3 {
+  margin-top: 20px;
+  margin-bottom: 170px;
+}
+
+.location .img {
+  border-radius: 10px;
+  width: 400px;
+  height: 250px;
+  background-color: red;
+}
