@@ -1,0 +1,142 @@
+/* Font: Nunito */
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  background-color: gray;
+  font-family: "Nunito", sans-serif;
+}
+
+.mini-cart {
+  width: 450px;
+  height: 100vh;
+  margin-left: auto;
+  background-color: #fff;
+}
+
+.mini-cart .heading {
+  padding: 20px;
+  font-size: 1rem;
+  background-color: #f4f4f4;
+}
+
+.product-list {
+  margin-top: 10px;
+}
+
+.product {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-bottom: 1px solid gray;
+}
+
+.product .product-image {
+  padding: 15px;
+  background-color: #fef9ef;
+}
+
+.product h2 {
+  font-size: 1rem;
+}
+
+.product .cancel {
+  position: relative;
+  left: 250px;
+  bottom: 30px;
+  font-size: 1.3rem;
+}
+
+.product .product-price {
+  display: flex;
+  column-gap: 50px;
+  align-items: center;
+  position: relative;
+  bottom: 15px;
+}
+
+.product .product-price span {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.product-price .quantity {
+  padding: 5px 10px;
+  border-radius: 30px;
+  border: 1px solid gray;
+}
+
+.quantity button {
+  border: none;
+  background-color: #fff;
+}
+
+.quantity span {
+  padding: 5px 20px;
+}
+
+.total {
+  display: flex;
+  column-gap: 30px;
+  padding: 3px 20px;
+}
+
+.total span {
+  color: #ee6c44;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.btn-action {
+  margin-top: 0 auto;
+}
+
+.btn-action button {
+  display: block;
+  width: 400px;
+  margin: 10px auto;
+  margin-bottom: 15px;
+  padding: 20px 40px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.btn-action .view-cart-btn {
+  background-color: #fff;
+  border: 1px solid blue;
+}
+
+.btn-action .add-cart-btn {
+  background-color: #4060f3;
+  color: #fff;
+}
+
+.shiping {
+  width: 400px;
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+}
+
+.shiping i {
+  border: 1px solid blue;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 2rem;
+  color: blue;
+}
+
+.shiping span {
+  font-size: 1.2rem;
+}

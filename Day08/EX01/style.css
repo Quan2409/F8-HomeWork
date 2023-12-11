@@ -1,0 +1,86 @@
+/* Fonts: Manrope */
+@import url("https://fonts.googleapis.com/css2?family=Manrope&display=swap");
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: #f7f7f9;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1300px;
+  margin: 30px auto;
+}
+
+.nav-bar .menu {
+  margin-left: auto;
+  position: relative;
+}
+
+.nav-bar .menu li {
+  display: inline-block;
+  margin-right: 35px;
+  font-weight: bold;
+}
+
+.nav-bar .menu ~ li:hover {
+  color: #8a8888;
+}
+
+.nav-bar .menu li:nth-child(6):hover > .mega-menu {
+  visibility: visible;
+}
+
+.nav-bar .menu .mega-menu {
+  display: flex;
+  width: 1250px;
+  margin-top: 20px;
+  margin-left: -1050px;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #fff;
+  position: absolute;
+  visibility: hidden;
+}
+
+.mega-menu h1 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.mega-menu .first-side li,
+.mega-menu .second-side li {
+  width: 150px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.mega-menu .first-item {
+  margin-bottom: 30px;
+}
+
+.mega-menu .first-item,
+.mega-menu .second-item {
+  display: flex;
+  column-gap: 30px;
+}
+
+.mega-menu .second-side {
+  margin-left: 50px;
+}
+
+.mega-menu .second-side .column {
+  display: flex;
+  column-gap: 100px;
+}
