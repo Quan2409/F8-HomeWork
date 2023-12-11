@@ -1,0 +1,81 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Space+Grotesk&display=swap");
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  margin-top: 30px;
+}
+
+.big-item {
+  display: flex;
+  column-gap: 30px;
+  font-family: "Inter", sans-serif;
+}
+
+.big-item .sub-item {
+  width: 300px;
+  text-align: right;
+}
+
+.big-item .sub-item h1 {
+  font-size: 1.3rem;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+/* Second Column */
+.devider {
+  position: relative;
+  top: 5px;
+  margin-bottom: 15px;
+}
+
+.devider-bar {
+  width: 1px;
+  height: 100px;
+  position: relative;
+  left: 7px;
+  background-color: gray;
+}
+
+button {
+  margin-top: 10px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: rgb(209, 209, 209);
+}
+
+i {
+  color: green;
+}
+
+/* Third Column */
+.date {
+  position: relative;
+  top: 5px;
+}
+
+.big-item:hover .sub-item {
+  position: relative;
+  left: 370px;
+  text-align: left;
+}
+
+.big-item:hover .sub-item > button {
+  background-color: brown;
+  color: #fff;
+  font-weight: bold;
+  transition: ease-in-out 0.5s;
+}
+
+.big-item:hover .date {
+  position: relative;
+  right: 150px;
+  text-align: right;
+}
