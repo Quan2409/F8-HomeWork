@@ -4,3 +4,97 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.law-list {
+  display: flex;
+  column-gap: 30px;
+  flex-wrap: wrap;
+  width: 1200px;
+  margin: 30px auto;
+}
+
+.law {
+  width: 350px;
+  height: 230px;
+  margin-bottom: 30px;
+  padding: 30px;
+  border: 1px solid gray;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.law {
+  position: relative;
+  overflow: hidden;
+}
+
+.law::before {
+  content: "";
+  width: 350px;
+  height: 230px;
+  display: none;
+  opacity: 0.1;
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  background-image: url("https://i.pinimg.com/736x/40/06/01/4006016151c0d6def7e4cf1b66f29333.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.law:hover {
+  background: rgba(145, 100, 84, 1);
+  color: #ffffff;
+  font-weight: bolder;
+}
+
+.law:hover > .content {
+  padding: 10px;
+  border: 1px solid gray;
+}
+
+.law:hover > .content h2 {
+  transform: translate(0, -60px);
+  transition: transform 0.5s;
+}
+
+.law:hover > .content p {
+  transform: translate(0, -50px);
+  transition: transform 0.5s;
+}
+
+.law:hover > .content img {
+  opacity: -1;
+  transition: opacity 0.5s;
+}
+
+.law:hover::before {
+  display: block;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  display: none;
+  margin-left: 10px;
+}
+
+.btn span {
+  margin-right: 15px;
+}
+
+.btn i {
+  padding: 5px;
+  border: 1px solid gray;
+  border-radius: 50%;
+}
+
+.law:hover > .btn {
+  display: block;
+  transform: translate(0, -35px);
+  transition: transform 1s;
+}
+
+.btn i:hover {
+  background-color: #ffffff;
+  color: #000;
+}
