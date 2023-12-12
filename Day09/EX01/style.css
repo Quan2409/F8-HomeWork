@@ -9,7 +9,8 @@
 }
 
 main {
-  margin-top: 30px;
+  width: 800px;
+  margin: 30px auto;
 }
 
 .big-item {
