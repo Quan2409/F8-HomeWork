@@ -1,0 +1,77 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(188, 188, 188);
+}
+
+main {
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  width: 37%;
+  margin: 30px auto;
+  padding: 3px;
+  background-color: #fff;
+  position: relative;
+}
+
+.nav-bar li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 5px;
+  padding: 15px;
+  border: 1px solid gray;
+}
+
+.nav-bar li:hover {
+  background-color: blue;
+  color: #fff;
+}
+
+li:nth-of-type(1):hover ~ .content-first,
+li:nth-of-type(2):hover ~ .content-second,
+li:nth-of-type(3):hover ~ .content-third,
+li:nth-of-type(4):hover ~ .content-four {
+  transform-origin: top;
+  visibility: visible;
+  animation: flip 1s linear;
+}
+
+.content-first,
+.content-second,
+.content-third,
+.content-four {
+  position: absolute;
+  top: 60px;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.content-second,
+.content-third,
+.content-four,
+.content-first {
+  visibility: hidden;
+}
+
+/* Animation */
+@keyframes flip {
+  from {
+    transform: rotateX(0deg);
+  }
+
+  50% {
+    transform: rotateX(-90deg);
+  }
+
+  to {
+    transform: rotateX(0deg);
+  }
+}
